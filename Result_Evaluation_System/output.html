@@ -1,0 +1,74 @@
+
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+  
+  table {
+    font-family: 'Rock Salt',cursive;
+    table-layout: fixed;
+    width: 100%;
+    border: 1px solid red;
+    border: 3px solid purple;
+    background-color: #f0f0f0;
+  }
+  
+  thead th:nth-child(1) {
+    width: 10%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 20%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 35%;
+  }
+  
+  th, td {
+    padding: 5px;
+  }
+  
+  .container form .button{
+    font-family: 'Rock Salt',cursive;
+    margin: 50px 0 60px 0;
+  }
+  .container .input-box input[type="submit"]{
+    font-family: 'Rock Salt',cursive;
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+    font-size: 25px;
+    color: #fff0ff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  .container .input-box input[type="submit"]:hover{
+    letter-spacing: 1px;
+    background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+  }
+  </style>
+  </head>
+  <body>
+  <div class="container">
+    <form name= "printresult" method="post" action="downloadpdf.php">
+        <div class="input-box button">
+          <input type="submit" name="dbtn" value="Print Result">
+        </div>
+      </form>
+
+    <form name= "logout" method="post" action="user.html">
+          <div class="input-box button">
+            <input type="submit" name="lout" value="Log Out">
+          </div>
+        </form>
+
+        
+
+      </div>
+  </body>
+  </html>

@@ -1,0 +1,108 @@
+<style>
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div.container {
+  border-radius: 5px;
+  background-color:white;
+  padding: 20px;
+}
+</style>
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <h1 style="font-family: 'Times New Roman', Times, serif;font-size: 50px;color: white;">Student Result and Performance Details</h1>
+<body style="font-family: Georgia, 'Times New Roman', Times, serif;">
+    
+  <div class="container">
+    <form name="frmaddmarks" method="post" action="addmarks.php">
+      <label>PRN No</label>
+      <input type="text" name="prn" id="prn" placeholder="PRN No......">
+
+      <label style="font-weight: bold;">First Year</label>
+      <input type="text" name="fcgpa" id="fcgp" placeholder="First Year CGPA......">
+      <input type="text" name="fpre" id="fpr"placeholder="First Year Attendane....."> 
+
+      <label style="font-weight: bold;">Second Year</label>
+      <input type="text" name="scgpa" id="scgp" placeholder="Second Year CGPA......">
+      <input type="text" name="spre" id="spr"placeholder="Second Year Attendane....."> 
+
+      <label style="font-weight: bold;">Third Year</label>
+      <input type="text" name="tcgpa" id="tcgp" placeholder="Third Year CGPA......">
+      <input type="text" name="tpre" id="tpr"placeholder="Third Year Attendane....."> 
+
+      <label style="font-weight: bold;">Fourth Year</label>
+      <input type="text" name="fopre" id="fopr"placeholder="Fourth Year Attendane....."> 
+
+      <label style="font-weight: bold;">Willingness To Learn</label>
+      <select id="Willingness" name="Willingness">
+        <option value="Yes">Yes</option>
+        <option value="no">No</option>
+
+      <label style="font-weight: bold;">Health Score</label>
+      <input type="text" name="health" id="healt" placeholder="Health score out of 5......">
+
+      <label style="font-weight: bold;">Extra Circular Activities</label>
+      <select id="extra" name="extra">
+          <option value="Yes">Yes</option>
+          <option value="no">No</option>
+    
+      <label style="font-weight: bold;">Higher Eduction</label>
+      <input type="text" name ="high" id="hi" placeholder="Chances of Higher Education ot of 5....">
+    
+      <label style="font-weight: bold;">Private Tutions</label>
+      <select id="tutt" name="tutt">
+        <option value="Yes">Yes</option>
+        <option value="no">No</option>
+      
+      <label style="font-weight: bold;">Family Support</label>
+      <input type="text" name="family" id="famil" placeholder="Falimy Backgroud for Education out of 5....">
+  
+      <label style="font-weight: bold;">Sufficient study time</label>
+      <select id="studyt" name="studyt">
+        <option value="Yes">Yes </option>
+        <option value="no">No</option>
+
+      <input type="submit" name="mbtn" value="Submit">
+
+      <div style="text-align: center ; color: blue;">
+        <a href="admindash.html">Back</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
